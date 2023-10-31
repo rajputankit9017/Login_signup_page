@@ -46,7 +46,7 @@ session_start();
   </header>
 
   <div class="popup-container"  id="login-popup">
-    <div class="popup" style="background-image:url('bg.avif'); background-size:cover;background-repeat:no-repeat;">
+    <div class="popup" style="background-image:url('./images/bg.avif'); background-size:cover;background-repeat:no-repeat;">
       <form method="POST" action="login_register.php">
         <h2>
           <span>USER LOGIN</span>
@@ -60,7 +60,7 @@ session_start();
   </div>
 
   <div class="popup-container" id="register-popup">
-    <div class="register popup" style="background-image:url('bg.avif'); background-size:cover;background-repeat:no-repeat;">
+    <div class="register popup" style="background-image:url('./images/bg.avif'); background-size:cover;background-repeat:no-repeat;">
       <form method="POST" action="login_register.php">
         <h2>
           <span>USER REGISTER</span>
@@ -74,7 +74,7 @@ session_start();
       </form>
     </div>
   </div>
-  <div style='background-image:url("bg2.jpg");background-size: cover;background-repeat: no-repeat;width:100vw;height:90vh;display:flex;'> 
+  <div style='background-image:url("./images/bg2.jpg");background-size: cover;background-repeat: no-repeat;width:100vw;height:90vh;display:flex;'> 
   <?php
     if(isset($_SESSION['logged_in'])&& $_SESSION['logged_in']==true)
     {
